@@ -1,0 +1,5 @@
+/node_modules
+s
+# Pour Githubs
+.env
+./front/node_modules

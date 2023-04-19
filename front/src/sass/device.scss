@@ -1,0 +1,27 @@
+$mobile: 768px;
+$desktop: 992px;
+$mobile-up: 'only screen and (max-width: #{$mobile}) and (orientation: portrait)';
+$mobile-down: 'only screen and (max-width: #{$mobile}) and (orientation: landscape)';
+$desktop-up: 'only screen and (min-width: #{$mobile + 1px})';
+$tablet-up: 'only screen and (min-width: #{$mobile + 1px}) and (max-width: #{$desktop - 1px}) and (orientation: portrait)';
+$tablet-down: 'only screen and (min-width: #{$mobile + 1px}) and (max-width: #{$desktop - 1px}) and (orientation: landscape)';
+
+@media only screen and (min-width: #{$desktop}) {
+ .navbar-nav {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between;
+  width: 92vw !important;
+ }
+ .dropdown-menu-dark {
+  margin-left: -6vw !important;
+ }
+ .dropdown-menu-dark > li:first-child {
+  margin-top: -3vh !important;
+ }
+}
+@media #{$mobile-up} {
+ .dropdown-menu-dark {
+  margin-top: -3vh !important;
+ }
+}

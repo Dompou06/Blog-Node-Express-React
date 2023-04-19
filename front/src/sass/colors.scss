@@ -1,0 +1,45 @@
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+.bg-fonce {
+ background-color: darken($cyan, 30);
+}
+.bg-moyen {
+ background-color: darken($cyan, 20);
+}
+.bg-clair {
+ background-color: darken($cyan, 15);
+}
+.bg-tresclair {
+ background-color: darken($cyan, 9);
+}
+.red {
+ background-color: red;
+}
+.btn-success {
+ background-color: darken($green, 7) !important;
+}
+.btn-primary {
+ background-color: darken($cyan, 20) !important;
+}
+.btn-secondary {
+ background-color: darken($cyan, 15) !important;
+}
+.btn-success:hover {
+ background-color: darken($green, 3) !important;
+}
+.text-fonce {
+ color: darken($cyan, 30);
+}
+.text-moyen {
+ color: darken($cyan, 20);
+}
+.text-secondary {
+ color: darken($cyan, 20) !important;
+}
+.border-moyen {
+ border: solid 1px darken($cyan, 20);
+}
+.box-shadow {
+ box-shadow: 0 0.5rem 1rem rgba(darken($cyan, 30), 0.4);
+}
